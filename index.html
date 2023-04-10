@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title> movie shop</title>
+        <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    </head>
+    <body>
+        <header>
+            <a header="#" class="logo"> <img src="movie.jpeg"></a>
+            <ul class="navigation">
+                <li><a href="#"> Trailer </a></li>
+                <li><a href="https://www.metacritic.com/browse/movies/release-date/theaters/date"> Latest Movies </a></li>
+                <li><a href="https://www.imdb.com/chart/top/"> Movie List</a></li>
+            <!--
+                <li><a href="#"> Tv Shows </a></li>
+                <li><a href="#"> Movies </a></li>
+                <li><a href="#"> Latest </a></li>
+                <li><a href="#"> My List</a></li>
+            -->
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="search">
+                <i class="fas fa-search"></i>
+            </div>
+        </header>
+        <div class="banner">
+            <img src="home.png" class="bg">
+            <div class="content">
+                <img src="namw.jpeg" class="movieTitle">
+                <h4>
+                    <span> 2023 </span>
+                    <span> <i> 12+ </i></span>
+                    <span> 2h 49min </span>
+                    <span> Action </span>
+                    <span> Crime </span>
+                    <span> Thriller </span>
+                </h4>
+                <p> John Wick uncovers a path to defeating The High Table. But
+                     before he can earn his freedom, Wick must face off against 
+                     a new enemy with powerful alliances across the globe and 
+                     forces that turn old friends into foes. 
+                  </p>   
+                    <div class="buttons">
+                        <a href="https://www.youtube.com/watch?v=qEVUtrk8_B4"><i class="fas fa-play"></i> Watch Trailer </a>
+                       <!-- <a href="#"><i class="fas fa-plus"></i> My List </a>-->
+                    </div>
+            </div>
+           <!-- <a class="play" onclick="toggleVideo();"><img src="play.png"> Watch Trailer </a>-->
+        </div>
+
+       <!-- <div class="trailer">
+            
+           <video src="https://www.youtube.com/watch?v=qEVUtrk8_B4" controls="true" autoplay="true"></video> 
+            <img src="close.png" class="close" onclick="toggleVideo();">
+        </div>-->
+        
+        <script>
+
+            function toggleVideo(){
+                const trailer = document.querySelector('.trailer');
+                const video = document.querySelector('video');
+                trailer.classList.toggle('active')
+                video.currentTime = 0;
+                video.pause();
+            }
+            </script>
+    </body>
